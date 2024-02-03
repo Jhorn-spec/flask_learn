@@ -24,7 +24,7 @@ def query_api(zip):
 @app.route('/weather/<zip>')
 def result(zip):
     # get the json file from the openweather API
-    resp = queri_api(zip)
+    resp = query_api(zip)
     # construct a string using the json data for 
     # temperature and description
     try:
